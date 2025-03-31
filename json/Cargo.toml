@@ -22,4 +22,5 @@ path = "src/lib.rs"
 serde = { version = "1", features = [ "derive" ] }
 serde_json = "1"
 
-bitcoin = { version = "0.31.0", features = ["serde", "rand-std"]}
+# bitcoin = { version = "0.31.0", features = ["serde", "rand-std"]}
+bitcoin = { git = "https://github.com/riftresearch/rust-bitcoin", tag = "bitcoin-0.32.5-patch-v1", default-features = false, features = ["serde", "rand-std"] }
